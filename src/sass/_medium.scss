@@ -1,0 +1,30 @@
+@media (min-width: 768px) and (max-width: 968px) {
+    .hamburger{
+        display: none;
+    }
+.nav {
+	
+	&-desktop{
+	display: grid;
+	}
+
+	&-mobile {
+		display: none;
+	
+	
+	}}
+
+	.offers {
+	&__cards {
+		justify-content: center; /* Dostosowanie kart */
+		gap: 2%; /* Zmniejszenie odstępu między kartami */
+	  }
+  
+	  &__card {
+		flex: 1 1 calc(50% - 2%); /* Dwie karty w jednym rzędzie */
+		max-width: 300px;
+		margin-bottom: 20px; /* Dodanie marginesu dolnego dla odstępu */
+	  }
+	}
+}
+

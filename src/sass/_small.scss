@@ -1,0 +1,299 @@
+@media (max-width: 767px) {
+	/* Nawigacja */
+	.hamburger{
+	display: inline;
+	position: fixed;
+
+	}
+	.nav {
+		&-desktop {
+			display: none;
+		}
+
+		&-mobile {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: $white;
+			z-index: 10;
+			transform: translateX(-100%);
+			transition: transform 0.3s;
+			touch-action: none;
+
+			&-active {
+				transform: translateX(0);
+			}
+		}
+
+		&__link {
+			text-decoration: none;
+			color: $dark;
+			padding: 1.5em 0;
+			transition: background-color 0.3s;
+			text-align: center;
+			width: 100%;
+			font-size: 1.6em;
+			letter-spacing: 0.2em;
+
+			&:hover {
+				background-color: $dark;
+				color: $white;
+			}
+		}
+
+		&__logo {
+			color: $dark;
+			font-size: 1.8em;
+			left: 0;
+			width: 100%;
+			position: relative;
+			margin-bottom: 5%;
+		}
+	}
+
+	/* Sekcja About */
+	.about {
+		height: auto;
+		padding: 0 5%;
+		margin-bottom: 2%;
+
+		&__card {
+			display: grid;
+			grid-template-columns: 1fr;
+			height: auto;
+			margin: 0;
+
+			&-img {
+				background-image: url('/src/img/lake-small.jpg');
+				left: 0;
+				background-size: cover;
+				height: 300px; // Zmniejsz wysokość obrazu
+				background-position: center;
+				margin-right: 0;
+				margin-bottom: 15px; // Dodaj margines dolny, aby oddzielić obraz od tekstu
+			}
+
+			&-text {
+				height: auto; // Ustaw wysokość na automatyczną
+				text-align: justify;
+				margin-left: 0;
+				font-size: 1em; // Zmniejsz czcionkę tekstu
+				h2 {
+					font-size: 1.2em; // Zmniejsz czcionkę tytułu
+				}
+				p {
+					font-size: 0.8em; // Zmniejsz czcionkę paragrafu
+					line-height: 1.6; // Zmniejsz wysokość linii
+				}
+			}
+		}
+	}
+
+	/* Hero */
+	.hero__img {
+		height: 300px;
+		background-position: center;
+		background-image: url('/src/img/jungle_bg-small.jpg');
+		&-title {
+			font-size: 1.1em;
+			margin-left: 5%;
+		}
+
+		&-text {
+			font-size: 1.4em;
+			margin-left: 5%;
+			&.section-contact {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+			}
+		}
+		&.section-contact {
+			height: 200px;
+			align-items: center;
+			font-size: 1.4em;
+			letter-spacing: 0.2rem;
+		}
+	}
+
+	/* Invite */
+	.invite {
+		&-img {
+			background-image: url('/src/img/girl-small.jpg');
+		}
+		&-text {
+			width: 80%; // Zmniejsz szerokość tekstu w zaproszeniu
+			font-size: 1.2em; // Zmniejsz czcionkę
+		}
+	}
+
+	/* Oferta */
+	.offers {
+		margin-bottom: 1em;
+		h2 {
+			font-weight: bold;
+			font-size: 1.2em;
+		}
+		&-title {
+			font-size: 1.4em;
+			margin-bottom: 1em;
+		}
+
+		&__cards {
+			flex-direction: column; // Ustaw karty w kolumnie na mniejszych ekranach
+			gap: 20px; // Zmniejsz odstęp między kartami
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__card {
+			max-width: 100%; // Ustaw szerokość karty na 100%
+			padding: 1em;
+			font-size: 1em; // Zmniejsz czcionkę
+		}
+	}
+
+	// CONTACT
+	.contact {
+		&__wrapper {
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+			height: auto;
+		}
+		&__card {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			position: relative;
+			height: auto;
+			&-img {
+				height: 300px;
+				width: auto;
+				margin: 0 1em;
+			}
+			&-text {
+				margin-top: 2em;
+				height: auto;
+				width: 100%;
+				position: relative;
+				margin-left: 0;
+				text-justify: auto;
+				text-align: left;
+				flex-wrap: wrap;
+				justify-content: center;
+				p {
+					font-size: 1.1em;
+					text-align: justify;
+					flex-wrap: wrap;
+					color: $dark;
+					line-height: 1.8;
+				}
+			}
+		}
+		&__form {
+			justify-content: flex-start;
+			margin: 0;
+			min-width: 80%;
+
+			&-top {
+				flex-direction: column;
+			}
+			&-input {
+				border: 1px solid $dark;
+			}
+			&-label {
+			}
+			&-textarea {
+				max-width: 100%;
+				min-width: 100%;
+				width: 100%;
+				min-height: 150px;
+				border: 1px solid $dark;
+			}
+		}
+	}
+
+	// FOOTER
+	.footer {
+		display: flex;
+		flex-direction: column;
+		background-color: $light-gray;
+		align-items: center;
+
+		&__content {
+			background-color: $light-gray;
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			justify-content: flex-start;
+			align-items: center;
+			width: 100%;
+			height: auto;
+		}
+
+		&__logo {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin-left: 0;
+			top: 0;
+			a {
+				text-decoration: none;
+				color: $dark;
+				white-space: nowrap;
+				font-size: 3.8em;
+				i {
+					margin: 0.3em;
+				}
+			}
+		}
+
+		&__links {
+			margin: 0 2%;
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			width: 100%;
+			white-space: nowrap;
+			padding-left: 0;
+
+			&-column {
+				min-width: 150px;
+				margin-left: 0;
+
+				h2 {
+					font-size: 1.6em;
+					margin-bottom: 0.3em;
+					color: $dark;
+				}
+
+				p {
+					color: $dark;
+					cursor: pointer;
+				}
+			}
+		}
+
+		&__mark {
+			background-color: $light-gray;
+			display: flex; /* Dodane: Flexbox dla centrowania */
+			justify-content: center; /* Dodane: Centrowanie poziome */
+			align-items: center; /* Dodane: Centrowanie pionowe */
+			font-size: 1.2em;
+			color: $gray;
+			height: 80px;
+			width: 100%; /* Dodane: Szerokość na 100% */
+			border-top: 1px solid $dark; /* Dodane: Linia o grubości 2px */
+		}
+	}
+}
