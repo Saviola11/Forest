@@ -1,5 +1,5 @@
-@import './colors';
-@import './mixins';
+@import 'colors';
+@import 'mixins';
 
 *,
 *::before,
@@ -162,7 +162,7 @@ body {
 	position: relative;
 	height: 400px;
 	width: 100%;
-	background-image: url('/src/img/jungle_bg-big.jpg');
+	background-image: url('src/img/jungle_bg-big.jpg');
 	z-index: 0;
 	background-size: cover;
 	background-position: bottom;
@@ -221,7 +221,7 @@ body {
 		margin: 0 10%;
 		position: relative;
 		&-img {
-			background-image: url('/src/img/lake-big.jpg');
+			background-image: url('src/img/lake-big.jpg');
 			background-size: cover;
 			height: 400px;
 			background-position: center;
@@ -255,7 +255,7 @@ body {
 		position: relative;
 		height: 250px;
 		width: 100%;
-		background-image: url('/src/img/girl-big.jpg');
+		background-image: url('src/img/girl-big.jpg');
 		z-index: 0;
 		background-size: cover;
 		background-position: center;
@@ -383,16 +383,16 @@ body {
 		z-index: 2;
 	}
 	&-one {
-		background-image: url('/src/img/offer-one-big.jpg');
+		background-image: url('src/img/offer-one-big.jpg');
 	}
 	&-two {
-		background-image: url('/src/img/offer-two-big.jpg');
+		background-image: url('src/img/offer-two-big.jpg');
 	}
 	&-three {
-		background-image: url('/src/img/offer-three-big.jpg');
+		background-image: url('src/img/offer-three-big.jpg');
 	}
 	&-four {
-		background-image: url('/src/img/offer-four-big.jpg');
+		background-image: url('src/img/offer-four-big.jpg');
 	}
 	&__img.offer-four {
 		height: 20px;
